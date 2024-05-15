@@ -1,0 +1,33 @@
+.navbar {
+  display: flex;
+  justify-content: flex-start; /* Aligns items to the left */
+  background-color: #888;
+  border-bottom: 5px solid #000;
+}
+
+.navbar a {
+  
+  display: flex;
+  color: black;
+  text-align: left; /* Aligns the text to the left */
+  padding: 14px;
+  text-decoration: none;
+  justify-content: flex-start; /* Aligns the text to the left */
+  align-items: center; /* Vertically aligns the text in the middle */
+}
+
+.navbar a:hover {
+  background-color: black;
+  color: white;
+}
+
+.navbar img:hover{
+  filter: grayscale(1) invert(1);
+}
+
+.logo{
+  height: 1.8rem
+  
+}
+
+

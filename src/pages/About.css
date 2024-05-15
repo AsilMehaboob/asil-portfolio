@@ -1,0 +1,121 @@
+/* Define the styles for the content box */
+#abt-content {
+    position: relative;
+    z-index: 2;
+    font-size: 12px;
+    font-weight: normal;
+    width: 60rem;
+    margin: 100px auto 0;
+    border: 1px solid #111;
+    background: #ccc;
+    box-shadow: 1px 2px #111, inset 1px 1px 0px 0px #fff, inset -1px -1px 0px 0px #999;
+}
+
+
+
+/* Define the styles for the title */
+.title {
+    width: 100%;
+    text-align: center;
+    font-size: inherit;
+    font-weight: inherit;
+    padding: 1px 0;
+    background-size: 3px 2px;
+    margin: 0 0 0 0;
+}
+
+/* Define the styles for the inner content */
+
+
+
+
+.about-container {
+    display: flex;
+    justify-content: center; /* Horizontal centering */
+    align-items: center; /* Vertical centering */
+    flex-direction: column;
+
+  }
+
+  
+  .about-text{
+    text-align: center;
+    font-size: medium;
+  }
+
+
+  .download-btn{
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    width: 12rem;
+    line-height: 1.5;
+    cursor: pointer;
+    background: white;
+    color: black;
+    font-size: 20px;
+    font-family: 'Roboto Mono', sans-serif;
+    font-weight: 400;
+    text-align: left;
+    border: 3px solid black!important;
+    border-radius: 0;
+    box-shadow: 3px 3px black, 5px 5px white;
+    padding-right: 0.5rem;
+    margin-top: 20px;
+    text-decoration: none
+    
+}
+
+.download-btn:hover{
+    color: black;
+    background: white;
+}
+
+.download-btn:active{
+    background-color: white!important;
+    color: black!important;
+    box-shadow: 0px 0px white;
+    transform: translateX(5px) translateY(2px);
+    
+}
+
+
+.downloadbtn-div{
+    padding-top: 6%;
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons{
+    padding-top: 7.5%;
+    display: flex;
+    flex-direction: row;
+}
+
+.image-social {
+    border-radius: 50%;
+    height: 4rem;
+    width: 4rem;
+    padding: 1rem; /* Adjust padding to center the content */
+    transition: transform 0.5s cubic-bezier(0.25, 0.1, 0.25, 1); /* Smooth transition */
+}
+
+.image-social:hover {
+    transform: scale(1.1); /* Enlarge the icon slightly on hover */
+}
+
+.image-social:active {
+    transform: scale(0.9); /* Apply a slight push effect when clicked */
+}
+    border-radius: 50%;
+    height: 4rem;
+    width: 4rem;
+    padding: 1rem; /* Adjust padding to center the content */
+    transition: transform 0.5s cubic-bezier(0.25, 0.1, 0.25, 1); /* Smooth transition */
+}
+
+.image-social:hover {
+    transform: scale(1.1); /* Enlarge the icon slightly on hover */
+}
