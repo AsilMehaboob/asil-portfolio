@@ -3,6 +3,8 @@ import './About.css'
 import githubIcon from '../images/github.png'
 import linkedinIcon from '../images/linkedin.png'
 import mailIcon from '../images/mail.png'
+import resumepdf from '../images/AsilMehaboobResume.pdf'
+
 
 const About = () => {
   const [clicked, setClicked] = useState(false);
@@ -22,7 +24,7 @@ const About = () => {
         </div>
       </div>
       <div className='downloadbtn-div'>
-        <a href='src/assets/AsilMehaboobResume.pdf' download='Asil Mehaboob.pdf' className='download-btn'>Download Resume</a>
+        <a href={resumepdf} download='Asil Mehaboob.pdf' className='download-btn'>Download Resume</a>
       </div>
       <div className="social-icons">
         <a href="https://www.linkedin.com/in/asil-mehaboob-v" target="_blank"><img src={linkedinIcon} className='image-social' alt="LinkedIn Profile"/></a>
