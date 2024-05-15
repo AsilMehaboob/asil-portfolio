@@ -106,16 +106,3 @@
     transform: scale(1.1); /* Enlarge the icon slightly on hover */
 }
 
-.image-social:active {
-    transform: scale(0.9); /* Apply a slight push effect when clicked */
-}
-    border-radius: 50%;
-    height: 4rem;
-    width: 4rem;
-    padding: 1rem; /* Adjust padding to center the content */
-    transition: transform 0.5s cubic-bezier(0.25, 0.1, 0.25, 1); /* Smooth transition */
-}
-
-.image-social:hover {
-    transform: scale(1.1); /* Enlarge the icon slightly on hover */
-}

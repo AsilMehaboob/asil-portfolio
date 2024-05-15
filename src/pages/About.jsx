@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import './About.css'
+import githubIcon from '../images/github.png'
+import linkedinIcon from '../images/linkedin.png'
+import mailIcon from '../images/mail.png'
 
 const About = () => {
   const [clicked, setClicked] = useState(false);
@@ -22,9 +25,9 @@ const About = () => {
         <a href='src/assets/AsilMehaboobResume.pdf' download='Asil Mehaboob.pdf' className='download-btn'>Download Resume</a>
       </div>
       <div className="social-icons">
-        <a href="https://www.linkedin.com/in/asil-mehaboob-v" target="_blank"><img src="src/assets/linkedin.png" className='image-social' alt="LinkedIn Profile"/></a>
-        <a href="mailto:asilmehaboob@gmail.com"><img className='image-social' src='src/assets/mail.png'/></a>
-        <a href="https://github.com/AsilMehaboob" target="_blank"><img className='image-social'  src="src/assets/github.png" alt="GitHub Profile"/></a>
+        <a href="https://www.linkedin.com/in/asil-mehaboob-v" target="_blank"><img src={linkedinIcon} className='image-social' alt="LinkedIn Profile"/></a>
+        <a href="mailto:asilmehaboob@gmail.com"><img className='image-social' src={mailIcon}/></a>
+        <a href="https://github.com/AsilMehaboob" target="_blank"><img className='image-social'  src={githubIcon} alt="GitHub Profile"/></a>
       </div>
     </div>
   );

@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import './Home.css';
 import QuickLinks from '../components/QuickLinks';
+import waveImage from '../images/wave.png'
+import resumepdf from '../images/AsilMehaboobResume.pdf'
 
 const Home = () => {
   useEffect(() => {
@@ -20,10 +22,10 @@ const Home = () => {
             a developer and ML enthusiast
           </p>
           {/* Button to download resume */}
-          <a href='src/assets/AsilMehaboobResume.pdf' download='Asil Mehaboob.pdf' className='retro'>Hit me!</a>
+          <a href={resumepdf} download='Asil Mehaboob.pdf' className='retro'>Hit me!</a>
         </div>
         <div>
-          <img className='image' src='src/assets/wave.png'/>
+          <img className='image' src={waveImage}/>
         </div>
         
       </div>

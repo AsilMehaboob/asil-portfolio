@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './QuickLinks.css';
-import arrowIcon from '../assets/arrow.svg';
+import arrowIcon from '../images/arrow.svg';
 
 const QuickLinks = () => {
   return (
