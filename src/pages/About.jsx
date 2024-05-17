@@ -3,7 +3,7 @@ import './About.css'
 import githubIcon from '../images/github.png'
 import linkedinIcon from '../images/linkedin.png'
 import mailIcon from '../images/mail.png'
-import resumepdf from '../images/AsilMehaboobResume.pdf'
+import resumepdf from '../images/Asil Mehaboob Resume Final.pdf'
 
 
 const About = () => {
