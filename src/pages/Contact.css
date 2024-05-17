@@ -1,52 +1,72 @@
 .container-contact{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    justify-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
 }
 
-
-
 .map {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
+}
 
+.mapbox {
+  border: 10px solid var(--jet);
+  position: relative;
+  border-radius: 10px; /* Rounded corners for the map */
+}
+
+.mapbox figure {
+  height: 100%;
+}
+
+.mapbox iframe {
+  border: none;
+  filter: grayscale(1) invert(1);
+}
+
+.loading-spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.spinner {
+  border: 5px solid #ccc;
+  border-top: 5px solid #666;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 1200px) {
+  .container-contact {
+      flex-direction: column;
   }
-  
+}
+
+@media screen and (max-width: 800px) {
   .mapbox {
-    border: 10px solid var(--jet);
-    position: relative;
-    border-radius: 10px; /* Rounded corners for the map */
+      width: 100%;
   }
-  
-  .mapbox figure {
-    height: 100%;
-  }
-  
   .mapbox iframe {
-    border: none;
-    filter: grayscale(1) invert(1);
+      width: 100%;
   }
-  
-  .loading-spinner {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  
-  .spinner {
-    border: 5px solid #ccc;
-    border-top: 5px solid #666;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    animation: spin 1s linear infinite;
-  }
-  
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
+}
 
-  
+@media screen and (max-width: 600px) {
+  .container-contact {
+      flex-direction: column;
+  }
+  .map {
+      width: 100%;
+  }
+}

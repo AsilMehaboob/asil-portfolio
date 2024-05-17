@@ -97,3 +97,45 @@
 }
 
 
+/* For mobile devices */
+@media only screen and (max-width: 600px) {
+    .hello-container {
+      flex-direction: row;
+      align-items: center;
+    }
+  
+    .image {
+      width: 10rem;
+      height: auto;
+    }
+  
+    .hello {
+      text-align: center;
+    }
+  
+    .retro {
+      width: 100%;
+    }
+  }
+  
+  /* For tablets */
+  @media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .hello-container {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  
+    .image {
+      width: 14rem;
+      height: auto;
+    }
+  
+    .hello {
+      text-align: left;
+    }
+  
+    .retro {
+      width: 50%;
+    }
+  }
+  

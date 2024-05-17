@@ -1,19 +1,18 @@
 .navbar {
   display: flex;
-  justify-content: flex-start; /* Aligns items to the left */
+  justify-content: flex-start;
   background-color: #888;
   border-bottom: 5px solid #000;
 }
 
 .navbar a {
-  
   display: flex;
   color: black;
-  text-align: left; /* Aligns the text to the left */
+  text-align: left;
   padding: 14px;
   text-decoration: none;
-  justify-content: flex-start; /* Aligns the text to the left */
-  align-items: center; /* Vertically aligns the text in the middle */
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .navbar a:hover {
@@ -26,8 +25,22 @@
 }
 
 .logo{
-  height: 1.8rem
-  
+  height: 1.8rem;
 }
 
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    align-items: flex-start;
+  }
 
+  .navbar a {
+    width: 100%;
+    text-align: center;
+  }
+
+  .logo {
+    height: 1.2rem;
+  }
+}
