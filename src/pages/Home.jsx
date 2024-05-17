@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import './Home.css';
 import QuickLinks from '../components/QuickLinks';
 import waveImage from '../images/wave.png'
-import resumepdf from '../images/AsilMehaboobResume.pdf'
+import resumepdf from '../images/Asil Mehaboob Resume Final.pdf'
 
 const Home = () => {
   useEffect(() => {
